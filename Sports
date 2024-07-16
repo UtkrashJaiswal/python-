@@ -1,0 +1,39 @@
+from tkinter import *
+#login
+w=Tk()
+w.title ("SMO")
+w.geometry("1350x1000")
+w["bg"]="black"
+a=PhotoImage(file="D:/c.s project/a.png")
+a1=Label(image=a,bg="black").place(x=100,y=200)
+a2=Label(text="Sports Matches Organization",bg="black",fg="cyan",font=("broadway",40)).place (x=270,y=0)
+a3=PhotoImage(file="D:\c.s project\Football_Image_Logo(1)(1).png")#football
+a4=Button(image=a3,bg="white",fg="blue",height=160,width=180,command=open).place(x=600,y=80)
+a5=PhotoImage(file="D:\c.s project\8-badminton-sport-silhouette-cover(1)(1).png")#badminton
+a6=Button(image=a5,bg="grey",fg="blue",height=160,width=180).place(x=820,y=80)
+a7=PhotoImage(file="D:\c.s project\png-transparent-handball-basketball-ball-people-throwing-passing-bouncing-playing-game-netball(1)(1).png")#throwball
+a8=Button(image=a7,bg="white",fg="blue",height=160,width=180).place(x=1050,y=80)
+a9=PhotoImage(file="D:\c.s project\pngtree-volleyball-player-logo-abstract-action-png-image_5219165(1)(1).png")#volleyball
+a10=Button(image=a9,bg="white",fg="blue",height=160,width=180).place(x=600,y=270)
+a11=PhotoImage(file="D:\c.s project\images(1)(1).png")#handball
+a12=Button(image=a11,bg="white",fg="blue",height=160,width=180).place(x=820,y=270)
+a13=PhotoImage(file="D:\c.s project\images (1)(1)(1).png")#basketball
+a14=Button(image=a13,bg="white",fg="blue",height=160,width=180).place(x=1050,y=270)
+a15=Label(text="Choose your game",bg="black",fg="cyan",font=("freestyle script",30)).place(x=830,y=450)
+a16=Button(text="EXIT",bg="red",fg="black",height=1,width=10,font=("algerian"),command=w.destroy).place(x=1135,y=600)
+a17=Label(text="Participation Makes You To Win",bg="black",fg="cyan",font=("freestyle script",30)).place (x=130,y=471)
+a18=Label(text="Or To Learn But Never To Lose",bg="black",fg="cyan",font=("freestyle script",30)).place (x=130,y=510)
+#2nd page in foot ball
+def football():
+    w1=Tk()
+    w1.title("football")
+    w1.geometry("1350x1000")
+    a4=Button(image=a3,bg="white",fg="blue",height=160,width=180,command=football).place(x=600,y=80)
+
+
+    
+    
+football()
+
+
+w.mainloop()
