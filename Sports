@@ -3,37 +3,67 @@ from tkinter import *
 w=Tk()
 w.title ("SMO")
 w.geometry("1350x1000")
-w["bg"]="black"
-a=PhotoImage(file="D:/c.s project/a.png")
-a1=Label(image=a,bg="black").place(x=100,y=200)
-a2=Label(text="Sports Matches Organization",bg="black",fg="cyan",font=("broadway",40)).place (x=270,y=0)
-a3=PhotoImage(file="D:\c.s project\Football_Image_Logo(1)(1).png")#football
-a4=Button(image=a3,bg="white",fg="blue",height=160,width=180,command=open).place(x=600,y=80)
-a5=PhotoImage(file="D:\c.s project\8-badminton-sport-silhouette-cover(1)(1).png")#badminton
-a6=Button(image=a5,bg="grey",fg="blue",height=160,width=180).place(x=820,y=80)
-a7=PhotoImage(file="D:\c.s project\png-transparent-handball-basketball-ball-people-throwing-passing-bouncing-playing-game-netball(1)(1).png")#throwball
-a8=Button(image=a7,bg="white",fg="blue",height=160,width=180).place(x=1050,y=80)
-a9=PhotoImage(file="D:\c.s project\pngtree-volleyball-player-logo-abstract-action-png-image_5219165(1)(1).png")#volleyball
-a10=Button(image=a9,bg="white",fg="blue",height=160,width=180).place(x=600,y=270)
-a11=PhotoImage(file="D:\c.s project\images(1)(1).png")#handball
-a12=Button(image=a11,bg="white",fg="blue",height=160,width=180).place(x=820,y=270)
-a13=PhotoImage(file="D:\c.s project\images (1)(1)(1).png")#basketball
-a14=Button(image=a13,bg="white",fg="blue",height=160,width=180).place(x=1050,y=270)
-a15=Label(text="Choose your game",bg="black",fg="cyan",font=("freestyle script",30)).place(x=830,y=450)
-a16=Button(text="EXIT",bg="red",fg="black",height=1,width=10,font=("algerian"),command=w.destroy).place(x=1135,y=600)
-a17=Label(text="Participation Makes You To Win",bg="black",fg="cyan",font=("freestyle script",30)).place (x=130,y=471)
-a18=Label(text="Or To Learn But Never To Lose",bg="black",fg="cyan",font=("freestyle script",30)).place (x=130,y=510)
-#2nd page in foot ball
+w["bg"]="light blue"
+a=PhotoImage(file="H:/c.s project/a.png")
+a1=Label(w,image=a,bg="light blue").place(x=100,y=150)
+a2=Label(w,text="Sports Matches Organization",bg="light blue",fg="black",font=("broadway",40)).place (x=270,y=0)
+
+b=Label(w,text="Football" ,bg="light blue" , fg="black", font=("freestyle script" ,30)).place(x=650,y=270)
+b1=Label(w,text="Badminton" ,bg="light blue" , fg="black", font=("freestyle script" ,30)).place(x=850,y=270)
+b2=Label(w,text="Throwball" ,bg="light blue" , fg="black", font=("freestyle script" ,30)).place(x=1080,y=270)
+b3=Label(w,text="Volleyball" ,bg="light blue" , fg="black", font=("freestyle script" ,30)).place(x=630,y=530)
+b4=Label(w,text="Handball" ,bg="light blue" , fg="black", font=("freestyle script" ,30)).place(x=855,y=530)
+b5=Label(w,text="Basketball" ,bg="light blue" , fg="black", font=("freestyle script" ,30)).place(x=1080,y=530)
+a3=PhotoImage(file="H:/c.s project/Football_Image_Logo(1)(1).png")#football
 def football():
     w1=Tk()
     w1.title("football")
     w1.geometry("1350x1000")
-    a4=Button(image=a3,bg="white",fg="blue",height=160,width=180,command=football).place(x=600,y=80)
+a4=Button(w,image=a3,bg="white",fg="blue",height=160,width=180,command=football).place(x=600,y=80)
+a5=PhotoImage(file="H:/c.s project/8-badminton-sport-silhouette-cover(1)(1).png")#badminton
+def badminton():
+    w2=Tk()
+    w2.title("badminton")
+    w2.geometry("1350x1000")
+a6=Button(w,image=a5,bg="grey",fg="blue",height=160,width=180,command=badminton).place(x=820,y=80)
+a7=PhotoImage(file="H:\c.s project\png-transparent-handball-basketball-ball-people-throwing-passing-bouncing-playing-game-netball(1)(1).png")#throwball
+def throwball ():
+    w3=Tk()
+    w3.title("throwball")
+    w3.geometry("1350x1000")
+a8=Button(w,image=a7,bg="white",fg="blue",height=160,width=180,command=throwball).place(x=1050,y=80)
+a9=PhotoImage(file="H:/c.s project/pngtree-volleyball-player-logo-abstract-action-png-image_5219165(1)(1).png")#volleyball
+def  volleyball():
+    w4=Tk()
+    w4.title("volleyball")
+    w4.geometry("1350x1000")
+a10=Button(w,image=a9,bg="white",fg="blue",height=160,width=180,command= volleyball).place(x=600,y=350)
+a11=PhotoImage(file="H:/c.s project/images(1)(1).png")#handball
+def handball():
+    w5=Tk()
+    w5.title("handball")
+    w5.geometry("1350x1000")
+a12=Button(w,image=a11,bg="white",fg="blue",height=160,width=180,command=handball).place(x=820,y=350)
+a13=PhotoImage(file="H:/c.s project/images (1)(1)(1).png")#basketball
+def basketball():
+    w6=Tk()
+    w6.title("basketball")
+    w6.geometry("1350x1000")
+a14=Button(w,image=a13,bg="white",fg="blue",height=160,width=180,command=basketball).place(x=1050,y=350)
+a15=Label(text="Choose your game",bg="light blue",fg="black",font=("freestyle script",40)).place(x=800,y=600)
+a16=Button(text="EXIT",bg="red",fg="black",height=1,width=10,font=("algerian"),command=w.destroy).place(x=1240,y=650)
+a17=Label(text="Participation Makes You To Win",bg="light blue",fg="black",font=("freestyle script",40)).place (x=80,y=471)
+a18=Label(text="Or To Learn But Never To Lose",bg="light blue",fg="black",font=("freestyle script",40)).place (x=80,y=550)
+#2nd page in foot ball
 
 
     
-    
-football()
 
 
 w.mainloop()
+
+
+
+
+
+
